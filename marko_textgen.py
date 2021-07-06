@@ -50,6 +50,6 @@ while sentence == None:
     # モデルから文章を生成
     sentence = text_model.make_sentence(tries=100)
 
-print(sentence)
+print(sentence.replace(' ', ''))
 with open('sentence.txt', mode='a') as f:
-    f.write(sentence)
+    f.write(sentence.replace(' ', ''))
